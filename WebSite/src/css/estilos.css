@@ -590,6 +590,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -608,10 +612,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .flex {
@@ -655,6 +655,18 @@ h1, h2, h3, h4, h5, h6 {
   width: max-content;
 }
 
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
 .max-w-\[200px\] {
   max-width: 200px;
 }
@@ -689,6 +701,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-cols-\[repeat\(auto-fit\2c minmax\(170px\2c 1fr\)\)\] {
   grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+}
+
+.grid-cols-\[\] {
+  grid-template-columns: ;
+}
+
+.grid-cols-\[repeat\(auto-\)\] {
+  grid-template-columns: repeat(auto-);
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax());
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(0px\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(0px,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(220px\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
 }
 
 .content-center {
@@ -735,9 +767,17 @@ h1, h2, h3, h4, h5, h6 {
   border-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .bg-color-background {
@@ -753,6 +793,11 @@ h1, h2, h3, h4, h5, h6 {
 .bg-menu-color {
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+}
+
+.bg-card-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
 
 .bg-open-menu {
@@ -780,6 +825,16 @@ h1, h2, h3, h4, h5, h6 {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-16 {
@@ -815,6 +870,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .leading-normal {
