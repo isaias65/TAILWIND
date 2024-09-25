@@ -8,19 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+
 </head>
 <body class="font-dm-sans bg-color-background text-white">
 
     <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl">
 
         <header>
-            <nav class="flex h-20 bg-red-800 items-center justify-between">
+            <nav class="flex h-20 items-center justify-between">
                 <a href="" class="w-1/2 max-w-[200px]">
-                    Portafolio.
+                    <h2>
+                        Portafolio.
+                    </h2>
                 </a>
-                <input type="checkbox" id="menu">
-                <label for="menu">Hola</label>
-                <ul>
+
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+
+                <label for="menu" class="w-10 h-10 bg-open-menu bg-cover bg-center
+                bg-green-color rounded-lg cursor-pointer 
+                peer-checked/menu:bg-close-menu transition-all z-40 md:hidden">
+                </label>
+                
+                <ul class="fixed inset-0 bg-menu-color px-[5%] grid gap-6 auto-rows-max
+                content-center justify-items-center clip-circle-0
+                peer-checked/menu:clip-circle-full transition-[clip-path] duration-500
+                
+                md:clip-circle-full md:relative md:grid-flow-col md:p-0
+                md:bg-transparent">
                     <li>
                         <a href="#">About Me</a>
                     </li>
