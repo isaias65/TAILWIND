@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body class="h-[300px]">
+    <!-- <section class="group/section p-8 bg-red-400">
+    <figure class="w-64 h-96 relative top-40 left-20 group/figure overflow-hidden">
+        <p class="absolute inset-0 text-white bg-red-600/50 flex items-center justify-center
+        font-bold text-3xl z-10 
+        group-hover/figure:translate-y-full
+        group-hover/section:bg-blue-600/50 
+        transition">Soy un texto</p>
+        
+        <img class="w-full h-full object-cover relative" id="img" src="./assets/img-1.jpg" alt="">
+    </figure>
+    </section> -->
+
+
+    <!-- clase peer -->
+    <section class="space-y-4 mt10 mt-40 mx-auto w-max">
+        <button class="bg-red-400 text-white w-max p-4
+        peer/abajo">
+            Desplaza hacia abajo
+        </button>
+
+        <button class="bg-red-400 text-white w-max p-4
+        peer/derecha">
+            Desplaza hacia la derecha
+        </button>
+
+        <img src="./assets/img-1.jpg" class="w-32 h-32
+        peer-hover/derecha:translate-x-full
+        peer-hover/abajo:mt-32
+        transition-[margin,transform] duration-[2s]
+        " alt="">
+    </section>
+</body>
+</html>
