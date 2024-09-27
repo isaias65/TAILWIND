@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode / Light Mode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body class="font-inter bg-white before:absolute before:inset-x-0
+before:bg-very-pale-blue before:-z-10 text-very-dark-blue">
+    
+    <main class="w-[90%] max-w-screen-xl mx-auto overflow-hidden py-16">
+        <h1 class="text-3xl">Social Media Dashboard</h1>
+        <p class="text-dark-grayish-blue font-bold mt-3 pb-6 border-b-2">
+            Total Followers: 23,004
+        </p>
+
+        <div class="flex items-center justify-between pt-6">
+
+            <p class="text-dark-grayish-blue font-bold">
+                Dark Mode
+            </p>
+
+            <input type="checkbox" id="switch" class="peer hidden" 
+            data-id="switch-theme">
+
+            <label for="switch" class="w-16 h-8 flex items-center
+            flex-row-reverse p-2 rounded-full
+            cursor-pointer bg-[hsl(230,22%,74%)]
+            
+            peer-checked:bg-gradient-to-r
+            from-gradient-switch-first
+            to-gradient-switch-second
+            
+            peer-checked:[--bg-circle:hsl(228,28%,20%)]
+            peer-checked:[--transform-circle:-100%]
+            ">
+
+                <div class="bg-[var(--bg-circle,white)] w-1/2 
+                aspect-square rounded-full
+                translate-x-[var(--transform-circle)] transition-transform
+                ">
+
+                </div>
+            </label>
+        </div>
+    </main>
+
+</body>
+</html>
