@@ -7,3 +7,9 @@
         @apply font-bold;
     }
 }
+
+@layer components{
+    .card-stats{
+        @apply grid grid-cols-[min-content_max-content] grid-rows-[max-content_max-content] justify-between items-center gap-y-12 content-center;
+    }
+}
